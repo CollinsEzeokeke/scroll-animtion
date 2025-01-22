@@ -10,7 +10,10 @@ export default {
   theme: {
     extend: {
       strokeDasharray: {
-        '20': '20',
+        '1000': '1000',
+      },
+      strokeDashoffset: {
+        '1000': '1000',
       },
       colors: {
         background: "var(--background)",
@@ -19,20 +22,26 @@ export default {
       keyframes: {
         dash: {
           to: {
+            strokeDashoffset: '0',
+          },
+          from: {
             strokeDashoffset: '1000',
           }
         }
       },
       animation: {
-        dash: 'dash 15s linear infinite',
+        dash: 'dash 2s linear alternate infinite',
       }
     }
   },
   plugins: [
     function({ addUtilities }: { addUtilities: Function }) {
       const newUtilities = {
-        '.stroke-dash-20': {
-          'stroke-dasharray': '20',
+        '.stroke-dash-1000': {
+          'stroke-dasharray': '1000',
+        },
+        '.stroke-dash-offset-1000': {
+          'stroke-dash-offset': '1000',
         },
       }
       addUtilities(newUtilities)

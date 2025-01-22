@@ -162,7 +162,7 @@ export default function Animation() {
 
 
 
-            <path d="M20 48 h50 v-10 l16 12 l-16 12 v-8 h-50 z" className="stroke-red-400 decoration-dashed fill-green-500 stroke-dash-20 animate-dash"/>
+            <path d="M20 48 h50 v-10 l16 12 l-16 12 v-8 h-50 z" className="stroke-red-400 decoration-dashed fill-green-500 stroke-dash-1000 animate-dash stroke-dash-offset-1000"/>
             </svg>
         </div>
     );
