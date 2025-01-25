@@ -163,7 +163,16 @@ export default function Animation() {
 
 
             <path d="M20 48 h50 v-10 l16 12 l-16 12 v-8 h-50 z" className="stroke-red-400 decoration-dashed fill-green-500 stroke-dash-1000 animate-dash stroke-dash-offset-1000"/>
+
+            </svg>
+            <svg className="absolute top-0 left-0 w-[30%] animate-dash stroke-dash-1000 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 285">
+                
+            <path stroke="url(#b)" strokeLinecap="round" strokeLinejoin="round" strokeWidth={20} d="M142.892 59.721c-30.057-5.67-40.834 99.13-23.051 131.821" />
+            <path stroke="#D7D5FF" strokeLinecap="round" strokeLinejoin="round" strokeWidth={20} d="M119.577 191.219c17.747 32.552 50.284 32.552 65.206-4.71" />
+            <path stroke="#F4F3FF" strokeLinecap="round" strokeLinejoin="round" strokeWidth={20} d="M142.892 59.729c30.057 5.656-2.582 97.684-50.401 145.51" />
             </svg>
         </div>
     );
 }
+
+

@@ -30,15 +30,16 @@ export default {
         }
       },
       animation: {
-        dash: 'dash 2s linear alternate infinite',
+        dash: 'dash 2s linear ',
       }
     }
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
     function({ addUtilities }: { addUtilities: Function }) {
       const newUtilities = {
         '.stroke-dash-1000': {
-          'stroke-dasharray': '1000',
+          'stroke-dasharray': '90',
         },
         '.stroke-dash-offset-1000': {
           'stroke-dash-offset': '1000',
